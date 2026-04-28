@@ -41,6 +41,11 @@ body {
   color: var(--color-text);
   background-color: var(--color-modal-bg);
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 /* TYPOGRAPHY */
 .logo {
@@ -93,6 +98,8 @@ body {
 }
 
 .hero-title {
+  max-width: 496px;
+  margin: 0 auto 48px;
   font-weight: 700;
   font-size: 56px;
   letter-spacing: 0.02em;
@@ -139,6 +146,12 @@ body {
 
 /* COMPONENTS */
 .button-text {
+  display: block;
+  margin: 0 auto;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: none;
+
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
@@ -153,14 +166,6 @@ body {
 }
 
 /* LAYOUT */
-#header {
-  border-bottom: 1px solid var(--color-accent);
-}
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -172,12 +177,84 @@ body {
 .hero-section {
   background-color: var(--color-dark);
   color: var(--color-white);
+  padding: 188px 0;
 }
 
 .team-section {
   background-color: var(--color-light);
 }
+.team-section .section-title {
+  text-align: center;
+  margin-bottom: 72px;
+}
+.team-section ul {
+  display: flex;
+  gap: 24px;
+}
 
+.team-section li {
+  width: calc((100% - 72px) / 4);
+  background-color: var(--color-white);
+  border-radius: 0 0 4px 4px;
+}
+.team-section img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.card-content {
+  padding: 32px 0;
+  text-align: center;
+}
+.team-name {
+  margin-bottom: 8px;
+}
+
+.features-section ul{
+  display: flex;
+  gap: 24px;
+}
+.feature-title {
+  margin-bottom: 8px;
+}
+.features-section li {
+  width: calc((100% - 72px) / 4);
+}
 #footer {
   background-color: var(--color-dark);
+}
+/* HEADER */
+#header {
+  border-bottom: 1px solid var(--color-accent);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* NAV */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+}
+.nav-link {
+  display: block;
+  padding: 24px 0;
+}
+.logo {
+  margin-right: 76px;
+}
+address {
+  display: flex;
+  gap: 40px;
+}
+/* SECTION */
+.hero-section .container {
+  text-align: center;
 }
