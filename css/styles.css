@@ -231,9 +231,6 @@ img {
 .footer-text {
   max-width: 264px;
 }
-#footer .container{
-  margin-left: 156px;
-}
 
 /* HEADER */
 #header {
@@ -248,7 +245,7 @@ img {
 .portfolio-section ul{
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 48px 24px;
 }
 .portfolio-section li {
   width: calc((100% - 48px) / 3);
